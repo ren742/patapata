@@ -99,12 +99,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game\game.cpp" />
+    <ClCompile Include="src\game\game_object\player\player.cpp" />
     <ClCompile Include="src\game\game_object\scene_manager\scenes\scene.cpp" />
     <ClCompile Include="src\game\game_object\scene_manager\scene_manager.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game\game.h" />
+    <ClInclude Include="src\game\game_object\player\player.h" />
     <ClInclude Include="src\game\game_object\scene_manager\scenes\scene.h" />
     <ClInclude Include="src\game\game_object\scene_manager\scenes\scene_id.h" />
     <ClInclude Include="src\game\game_object\scene_manager\scene_manager.h" />

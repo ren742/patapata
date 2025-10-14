@@ -99,17 +99,42 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game\game.cpp" />
-    <ClCompile Include="src\game\game_object\player\player.cpp" />
+    <ClCompile Include="src\game\game_object\ball_manager\ball\ball.cpp" />
+    <ClCompile Include="src\game\game_object\ball_manager\ball\normal_ball\normal_ball.cpp" />
+    <ClCompile Include="src\game\game_object\ball_manager\ball\rare_ball\rare_ball.cpp" />
+    <ClCompile Include="src\game\game_object\ball_manager\ball_manager.cpp" />
+    <ClCompile Include="src\game\game_object\goal\goal.cpp" />
+    <ClCompile Include="src\game\game_object\controller_manager\controller\controller.cpp" />
+    <ClCompile Include="src\game\game_object\controller_manager\controller_manager.cpp" />
+    <ClCompile Include="src\game\game_object\player_manager\player\player.cpp" />
+    <ClCompile Include="src\game\game_object\player_manager\player_manager.cpp" />
     <ClCompile Include="src\game\game_object\scene_manager\scenes\scene.cpp" />
     <ClCompile Include="src\game\game_object\scene_manager\scene_manager.cpp" />
+    <ClCompile Include="src\game\game_object\stage_manager\stage\stage.cpp" />
+    <ClCompile Include="src\game\game_object\stage_manager\stage_manager.cpp" />
+    <ClCompile Include="src\game\game_object\timer\timer.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game\game.h" />
-    <ClInclude Include="src\game\game_object\player\player.h" />
+    <ClInclude Include="src\game\game_object\ball_manager\ball\ball.h" />
+    <ClInclude Include="src\game\game_object\ball_manager\ball\normal_ball\normal_ball.h" />
+    <ClInclude Include="src\game\game_object\ball_manager\ball\rare_ball\rare_ball.h" />
+    <ClInclude Include="src\game\game_object\ball_manager\ball_id.h" />
+    <ClInclude Include="src\game\game_object\ball_manager\ball_manager.h" />
+    <ClInclude Include="src\game\game_object\goal\goal.h" />
+    <ClInclude Include="src\game\game_object\controller_manager\controller\controller.h" />
+    <ClInclude Include="src\game\game_object\controller_manager\controller_id.h" />
+    <ClInclude Include="src\game\game_object\controller_manager\controller_manager.h" />
+    <ClInclude Include="src\game\game_object\player_manager\player\player.h" />
+    <ClInclude Include="src\game\game_object\player_manager\player_id.h" />
+    <ClInclude Include="src\game\game_object\player_manager\player_manager.h" />
     <ClInclude Include="src\game\game_object\scene_manager\scenes\scene.h" />
     <ClInclude Include="src\game\game_object\scene_manager\scenes\scene_id.h" />
     <ClInclude Include="src\game\game_object\scene_manager\scene_manager.h" />
+    <ClInclude Include="src\game\game_object\stage_manager\stage\stage.h" />
+    <ClInclude Include="src\game\game_object\stage_manager\stage_manager.h" />
+    <ClInclude Include="src\game\game_object\timer\timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,7 +11,7 @@
 
 #include "game.h"
 #include "game_object/scene_manager/scene_manager.h"
-#include "game_object/player/player.h"
+#include "game_object/player_manager/player/player.h"
 
 const unsigned int CGame::m_clear_color = 0xff7f7f7f;
 

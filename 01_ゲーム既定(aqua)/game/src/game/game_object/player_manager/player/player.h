@@ -17,6 +17,8 @@ public:
 
 	void Finalize(void) override;
 
+	void MoveArea(void);
+
 private:
 
 	aqua::CSprite				m_Player;	//スプライトオブジェクト

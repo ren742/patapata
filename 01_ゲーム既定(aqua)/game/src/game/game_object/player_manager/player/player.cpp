@@ -28,6 +28,8 @@ void CPlayer::Update(void)
 {
 	m_Velocity = aqua::CVector2(0.0f, 0.0f);
 
+	CPlayer::MoveArea();
+
 	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::W))
 	{
 		m_Velocity.y -= m_Speed;
@@ -67,4 +69,39 @@ void CPlayer::Finalize(void)
 {
 	m_Player.Delete();
 	m_Label.Delete();
+}
+
+void CPlayer::MoveArea(void)
+{
+	const float w = aqua::GetWindowWidth() - m_Player.GetTextureWidth();
+	const float h = aqua::GetWindowHeight() - m_Player.GetTextureHeight();
+
+	if (m_Player.position.x < 0.0f)
+	{
+		m_Player.position.x = 0.0f;
+
+		m_Velocity.x *= -1.0f;
+	}
+
+	if (m_Player.position.x > w)
+	{
+		m_Player.position.x = w;
+
+		m_Velocity.x *= -1.0f;
+	}
+
+	if (m_Player.position.y < 0.0f)
+	{
+		m_Player.position.y = 0.0f;
+
+		m_Velocity.y *= -1.0f;
+	}
+
+	if (m_Player.position.y > h)
+	{
+		m_Player.position.y = h;
+
+		m_Velocity.y *= -1.0f;
+	}
+
 }

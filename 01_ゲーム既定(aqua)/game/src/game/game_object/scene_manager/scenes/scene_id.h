@@ -21,9 +21,8 @@
 enum class SCENE_ID
 {
 	DUMMY,
-	TITLE,
-	GAMEMAIN,
-	CLEAR,
-	GAMEOVER,
-	RANKING,
+	TITLE,			// タイトル
+	SLECTPLAYER,	// 人数選択
+	GAMEMAIN,		// ゲームメイン
+	RESULT,			// リザルト
 };

@@ -1,4 +1,5 @@
 #include "ball_manager.h"
+#include "ball/normal_ball/normal_ball.h"
 
 CBallManager::CBallManager(aqua::IGameObject* parent)
 	:IGameObject(parent, "BallManager", "Manager")
@@ -7,12 +8,12 @@ CBallManager::CBallManager(aqua::IGameObject* parent)
 
 void CBallManager::Create(aqua::CVector2& position, float angle, float speed)
 {
-	//CBall* ball = aqua::CreateGameObject<CBall>(this);
+	CNormalBall* ball = aqua::CreateGameObject<CNormalBall>(this);
 
-	//if (!ball)
-	//{
-	//	return;
-	//}
+	if (!ball)
+	{
+		return;
+	}
 
-	//ball->Initialize(position, angle, speed);
+	ball->Initialize(position, angle, speed);
 }

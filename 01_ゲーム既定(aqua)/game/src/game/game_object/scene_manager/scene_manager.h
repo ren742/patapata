@@ -10,6 +10,7 @@
 
 #include "aqua.h"
 #include "scenes/scene.h"
+#include "../scene_manager/scenes/title_scene/title_scene.h"
 
 /*
  * @class CSceneManager

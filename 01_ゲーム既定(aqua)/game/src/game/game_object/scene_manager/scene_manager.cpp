@@ -17,7 +17,8 @@
  */
 
 // コンストラクタ
-CSceneManager::CSceneManager(aqua::IGameObject* parent) : aqua::IGameObject(parent, "SceneManager")
+CSceneManager::CSceneManager(aqua::IGameObject* parent) 
+	: aqua::IGameObject(parent, "SceneManager")
 {
 }
 

@@ -17,4 +17,7 @@ public:
 	void Finalize();   // ‰ð•ú
 
 private:
+
+	aqua::CSprite	m_Sprite;
+
 };

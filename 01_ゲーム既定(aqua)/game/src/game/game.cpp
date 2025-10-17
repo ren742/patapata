@@ -35,6 +35,7 @@ Initialize(void)
 
     aqua::CreateGameObject<CPlayer>(this);
 
+
     IGameObject::Initialize();
 }
 

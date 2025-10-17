@@ -11,6 +11,7 @@ void CBall::Initialize(const aqua::CVector2& position, float angle, float speed)
 
 void CBall::Update(void)
 {
+	
 }
 
 void CBall::Draw(void)

@@ -30,19 +30,19 @@ void CPlayer::Update(void)
 
 	CPlayer::MoveArea();
 
-	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::W))
+	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::W)||aqua::keyboard::Button(aqua::keyboard::KEY_ID::UP))
 	{
 		m_Velocity.y -= m_Speed;
 	}
-	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::A))
+	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::A) || aqua::keyboard::Button(aqua::keyboard::KEY_ID::LEFT))
 	{
 		m_Velocity.x -= m_Speed;
 	}
-	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::S))
+	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::S) || aqua::keyboard::Button(aqua::keyboard::KEY_ID::DOWN))
 	{
 		m_Velocity.y += m_Speed;
 	}
-	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::D))
+	if (aqua::keyboard::Button(aqua::keyboard::KEY_ID::D) || aqua::keyboard::Button(aqua::keyboard::KEY_ID::RIGHT))
 	{
 		m_Velocity.x += m_Speed;
 	}
